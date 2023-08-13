@@ -18,6 +18,19 @@ export const nextWindDirection = (currentDirection: CardinalDirection): Cardinal
     return next
 }
 
+export const prevWindDirection = (currentDirection: CardinalDirection): CardinalDirection => {
+    let next: CardinalDirection
+
+    // if it's east, next one backwards is north
+    if (currentDirection === 1) {
+        next = CardinalDirection.North
+    } else {
+        next = currentDirection - 1
+    }
+
+    return next
+}
+
 export const renderWindInChinese = (direction: CardinalDirection): string => {
     switch (true) {
         case direction === CardinalDirection.East: 
