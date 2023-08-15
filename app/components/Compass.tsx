@@ -54,17 +54,17 @@ const Compass = (props: {
   return (
     <>
       <div className="flex flex-col items-center">
-        <div className="flex flex-row">
-          <div className="grid grid-cols-3 grid-rows-3 text-center text-4xl my-4">
-            <div className="col-start-2 p-2"><Direction initialDirection={windTop} /></div>
-            <div className="row-start-2 p-2"><Direction initialDirection={windLeft} /></div>
-            <div id="prevailing-wind" className="row-start-2 p-2"><Direction initialDirection={windPrevailing} /></div>
-            <div className="row-start-2 p-2"><Direction initialDirection={windRight} /></div>
-            <div className="row-start-3 col-start-2 p-2"><Direction initialDirection={windBottom} /></div>
+          <div className="flex flex-row">
+            <div className="grid grid-cols-3 grid-rows-3 text-center text-4xl my-4">
+              <div className="col-start-2 p-2"><Direction initialDirection={windTop} /></div>
+              <div className="row-start-2 p-2"><Direction initialDirection={windLeft} /></div>
+              <div id="prevailing-wind" className="row-start-2 p-2"><Direction initialDirection={windPrevailing} /></div>
+              <div className="row-start-2 p-2"><Direction initialDirection={windRight} /></div>
+              <div className="row-start-3 col-start-2 p-2"><Direction initialDirection={windBottom} /></div>
+            </div>
           </div>
-        </div>
-        <div className="my-4">Round: {roundCounter}</div>
-        <div className="mt-10">
+          <div className="my-8">Round: {roundCounter}</div>
+        <div className="mt-10 fixed bottom-0 left-0 right-0 flex flex-row justify-center mb-8">
           <button className={`mx-2 ${roundCounter === 1 ? 'disabled text-gray-400' : ''}`} onClick={decrementWind} disabled={roundCounter === 1}>Previous Round</button>
           <button className={`mx-2 ${roundCounter === 16 ? 'disabled text-gray-400' : ''}`} onClick={incrementWind} disabled={roundCounter === 16}>Next Round</button>
         </div>
