@@ -1,0 +1,25 @@
+{
+  "room1": {
+    "player1": {
+      "id": "abcd123",
+      "name": "cheeze",
+      "score": 10
+    },
+    "player2": {
+      "id": "abcd123",
+      "name": "cheeze",
+      "score": 10
+    },
+    "player3": {
+      "id": "abcd123",
+      "name": "cheeze",
+      "score": 10
+    },
+    "player4": {
+      "id": "abcd123",
+      "name": "cheeze",
+      "score": 10
+    },
+    "round": 3
+  }
+}
